@@ -15,6 +15,7 @@
 
 <body>
     <h1>Hello World</h1>
+    <h2>It's me {{$name}} {{$surname}}</h2>
 </body>
 
 </html>
