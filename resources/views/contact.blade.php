@@ -14,12 +14,14 @@
 </head>
 
 <body>
-    <header>
-        <a href="{{ route('contact') }}">Contatti</a>
-    </header>
 
-    <h1>Hello World</h1>
-    <h2>It's me {{$name}} {{$surname}}</h2>
+    <head>
+        <a href="{{ route('home') }}">Home</a>
+    </head>
+
+    <body>
+        <h1>prova</h1>
+    </body>
 
 </body>
 
