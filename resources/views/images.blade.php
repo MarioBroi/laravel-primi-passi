@@ -42,8 +42,19 @@
         </nav>
     </header>
 
-    <h1>Hello World</h1>
-    <h2>It's me {{$name}} {{$surname}}</h2>
+    <body>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-2 row-cols-md-3 g-4">
+                @for ($i = 0; $i < 10; $i++)
+                    <div class="col">
+                        <div class="card">
+                            <img src="https://picsum.photos/900" alt="random image">
+                        </div>
+                    </div>
+                @endfor 
+            </div>
+        </div>
+    </body>
 
 </body>
 

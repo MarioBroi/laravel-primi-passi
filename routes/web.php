@@ -13,10 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/* Route::get('/', function () {
-    return view('welcome');
-}); */
-
 Route::get('/', function () {
 
     $data = [
@@ -28,5 +24,17 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/contact', function () {
-    return view('contact');
+
+    $contact = [
+        'name' => 'Attilio',
+        'surname' => 'Pinna',
+        'phone' => '+39 3389966212',
+        'email' => 'attiliopinna@live.it'
+    ];
+
+    return view('contact', $contact);
 })->name('contact');
+
+Route::get('/images', function () {
+    return view('images');
+})->name('images');
